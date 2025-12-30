@@ -1,4 +1,4 @@
-package net.sikorski1.neoforgemod.blocks;
+package net.sikorski1.neoforgemod.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -11,7 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sikorski1.neoforgemod.TutorialMod;
-import net.sikorski1.neoforgemod.items.ModItems;
+import net.sikorski1.neoforgemod.item.ModItems;
 
 import java.util.function.Supplier;
 

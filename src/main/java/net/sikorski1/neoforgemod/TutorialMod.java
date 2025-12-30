@@ -14,8 +14,9 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.sikorski1.neoforgemod.blocks.ModBlocks;
-import net.sikorski1.neoforgemod.items.ModItems;
+import net.sikorski1.neoforgemod.block.ModBlocks;
+import net.sikorski1.neoforgemod.item.ModCreativeModeTabs;
+import net.sikorski1.neoforgemod.item.ModItems;
 import org.slf4j.Logger;
 
 
@@ -28,6 +29,9 @@ public class TutorialMod {
         modEventBus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         modEventBus.addListener(this::addCreative);
