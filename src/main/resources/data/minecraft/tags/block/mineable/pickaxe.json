@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "neoforgemod:bismuth_block",
+    "neoforgemod:bismuth_ore",
+    "neoforgemod:bismuth_deepslate_ore"
+  ]
+}
