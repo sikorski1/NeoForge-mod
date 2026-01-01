@@ -10,5 +10,9 @@
   "block.neoforgemod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
   "block.neoforgemod.magic_block": "Magic Block",
   "creativetab.neoforgemod.bismuth_items": "Bismuth Items",
-  "creativetab.neoforgemod.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.neoforgemod.bismuth_blocks": "Bismuth Blocks",
+  "tooltip.neoforgemod.magic_block.tooltip": "This Block is very §9MAGICAL§r",
+  "tooltip.neoforgemod.chisel.shift_down": "This Item can chisel Blocks into Bricks",
+  "tooltip.neoforgemod.chisel": "Press §eShift§r for more Information",
+  "tooltip.neoforgemod.radish": "Tastes really great!"
 }
