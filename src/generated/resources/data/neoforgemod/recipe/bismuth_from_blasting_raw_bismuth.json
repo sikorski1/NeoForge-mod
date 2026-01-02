@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 120,
+  "experience": 0.5,
+  "group": "bismuth",
+  "ingredient": {
+    "item": "neoforgemod:raw_bismuth"
+  },
+  "result": {
+    "count": 1,
+    "id": "neoforgemod:bismuth"
+  }
+}

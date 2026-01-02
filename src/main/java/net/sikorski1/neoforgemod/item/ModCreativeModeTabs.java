@@ -18,13 +18,13 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> BISMUTH_ITEMS_TAB = CREATIVE_MODE_TAB.register("bismuth_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BISMUTH.get()))
-                    .title(Component.translatable("creative.neoforgemod.bimsuth_items"))
+                    .title(Component.translatable("creativetab.neoforgemod.bismuth_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BISMUTH);
                         output.accept(ModItems.RAW_BISMUTH);
 
                         output.accept(ModItems.CHISEL);
-                        
+
                         output.accept(ModItems.RADISH);
 
                         output.accept(ModItems.FROSTFIRE_ICE);
@@ -34,7 +34,7 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> BISMUTH_BLOCK_TAB = CREATIVE_MODE_TAB.register("bismuth_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "bismuth_items_tab"))
-                    .title(Component.translatable("creative.neoforgemod.bimsuth_blocks"))
+                    .title(Component.translatable("creativetab.neoforgemod.bismuth_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.BISMUTH_BLOCK);
                         output.accept(ModBlocks.BISMUTH_ORE);

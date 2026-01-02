@@ -1,0 +1,10 @@
+{
+  "values": {
+    "neoforgemod:frostfire_ice": {
+      "burn_time": 1800
+    },
+    "neoforgemod:starlight_ashes": {
+      "burn_time": 1200
+    }
+  }
+}
