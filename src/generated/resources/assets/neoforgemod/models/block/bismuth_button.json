@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "neoforgemod:block/bismuth_block"
+  }
+}

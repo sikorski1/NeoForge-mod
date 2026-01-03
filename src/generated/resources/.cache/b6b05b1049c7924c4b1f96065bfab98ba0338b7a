@@ -1,5 +1,9 @@
-// 1.21	2026-01-02T19:18:30.853715314	Item Models: neoforgemod
+// 1.21	2026-01-03T23:59:36.984122093	Item Models: neoforgemod
 274d2077881cb540c94d3e6462cf1adc32ce5566 assets/neoforgemod/models/item/bismuth.json
+24b1d7bca7e278a471115e95383d55db6fbc33c1 assets/neoforgemod/models/item/bismuth_button.json
+8a101db928059929dc545549c423649c1cd15ec6 assets/neoforgemod/models/item/bismuth_door.json
+775c8430c9fd66dd0a19ca65d20a685929098f4c assets/neoforgemod/models/item/bismuth_fence.json
+7ee1218f6bf888efd0416b844959cf70ac679ddf assets/neoforgemod/models/item/bismuth_wall.json
 5d8d9565c8fe6c4e2f52fe35908f12d57f4d5ce5 assets/neoforgemod/models/item/chisel.json
 5362921c0e8890d555c34db47c6269e50a823d7c assets/neoforgemod/models/item/frostfire_ice.json
 b3be00351f0abbdf485d432700571970f3750e8a assets/neoforgemod/models/item/radish.json

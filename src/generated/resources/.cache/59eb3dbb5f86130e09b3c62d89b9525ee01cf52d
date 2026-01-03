@@ -1,5 +1,14 @@
-// 1.21	2026-01-02T16:12:37.138929048	Loot Tables
+// 1.21	2026-01-03T23:59:36.987936625	Loot Tables
 9f45f8c614d2c4131b2bddac09c35f255326c5aa data/neoforgemod/loot_table/blocks/bismuth_block.json
+1b549d9e33e1fbb52d143182fe4322e809ba14ec data/neoforgemod/loot_table/blocks/bismuth_button.json
 43f3d96f7d65c5e2827ff1430780d969163af8c5 data/neoforgemod/loot_table/blocks/bismuth_deepslate_ore.json
+78480274691da4739215ebbe8f98abb5134804bd data/neoforgemod/loot_table/blocks/bismuth_door.json
+38c4d83ed2b5de9e65efc28be7b7e38019517486 data/neoforgemod/loot_table/blocks/bismuth_fence.json
+8c030ce020e467030b1823ebb1bec9941c483f5e data/neoforgemod/loot_table/blocks/bismuth_fence_gate.json
 a4f69997ea6584c77601caf5940f0afe3be59fda data/neoforgemod/loot_table/blocks/bismuth_ore.json
+250e2920bda06670227f8de69a878edb11a7a015 data/neoforgemod/loot_table/blocks/bismuth_pressure_plate.json
+c88b8ce51933f9197ae4cd67cf2159bcf7906759 data/neoforgemod/loot_table/blocks/bismuth_slab.json
+3e83ec1dc8be25c97d36d226f4880e5b27d80a50 data/neoforgemod/loot_table/blocks/bismuth_stairs.json
+d5af5f19970c922d3801b8870416bae5f7256c75 data/neoforgemod/loot_table/blocks/bismuth_trapdoor.json
+6acc719241ffdc1ec28d01e1dff8e0e5845e216d data/neoforgemod/loot_table/blocks/bismuth_wall.json
 fb0202d830db6baf08aad3cf909661936e72e4dc data/neoforgemod/loot_table/blocks/magic_block.json

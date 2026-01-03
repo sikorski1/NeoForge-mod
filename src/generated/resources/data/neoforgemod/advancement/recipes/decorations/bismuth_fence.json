@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bismuth": {
+      "conditions": {
+        "items": [
+          {
+            "items": "neoforgemod:bismuth"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "neoforgemod:bismuth_fence"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bismuth"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "neoforgemod:bismuth_fence"
+    ]
+  }
+}

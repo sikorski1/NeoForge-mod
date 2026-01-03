@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "bismuth",
+  "key": {
+    "#": {
+      "item": "neoforgemod:bismuth"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "neoforgemod:bismuth_door"
+  }
+}

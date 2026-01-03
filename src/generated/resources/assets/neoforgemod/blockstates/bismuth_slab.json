@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "neoforgemod:block/bismuth_slab"
+    },
+    "type=double": {
+      "model": "neoforgemod:block/bismuth_block"
+    },
+    "type=top": {
+      "model": "neoforgemod:block/bismuth_slab_top"
+    }
+  }
+}

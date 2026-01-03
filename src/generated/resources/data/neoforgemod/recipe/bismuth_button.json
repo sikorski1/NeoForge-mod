@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "bismuth",
+  "ingredients": [
+    {
+      "item": "neoforgemod:bismuth"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "neoforgemod:bismuth_button"
+  }
+}
