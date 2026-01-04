@@ -1,2 +1,7 @@
-// 1.21	2026-01-03T23:59:36.97522266	Tags for minecraft:item mod id neoforgemod
+// 1.21	2026-01-04T21:58:24.335855209	Tags for minecraft:item mod id neoforgemod
+5089a51a6b90013367e277ca9d050ba473c92b41 data/minecraft/tags/item/axes.json
+6acd2e5d4ef9e1951ba091711a91fe9d36dca0e8 data/minecraft/tags/item/hoes.json
+679826ddf0f0e08a7c766ab930e61951a6f4269e data/minecraft/tags/item/pickaxes.json
+dee914fbb09abe9ef663024663ce5d2493841c5b data/minecraft/tags/item/shovels.json
+08b3339f02070c8e6ea7a35d03a19d7f4ada6f85 data/minecraft/tags/item/swords.json
 c249eca736b5d9ae9fbc726267c28200ebd2dd93 data/neoforgemod/tags/item/transformable_items.json

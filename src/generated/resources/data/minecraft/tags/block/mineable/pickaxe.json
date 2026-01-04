@@ -9,6 +9,7 @@
     "neoforgemod:bismuth_pressure_plate",
     "neoforgemod:bismuth_button",
     "neoforgemod:bismuth_trapdoor",
-    "neoforgemod:bismuth_door"
+    "neoforgemod:bismuth_door",
+    "neoforgemod:bismuth_lamp"
   ]
 }

@@ -7,6 +7,7 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.sikorski1.neoforgemod.TutorialMod;
 import net.sikorski1.neoforgemod.block.ModBlocks;
+import net.sikorski1.neoforgemod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -30,7 +31,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BISMUTH_PRESSURE_PLATE.get())
                 .add(ModBlocks.BISMUTH_BUTTON.get())
                 .add(ModBlocks.BISMUTH_TRAPDOOR.get())
-                .add(ModBlocks.BISMUTH_DOOR.get());
+                .add(ModBlocks.BISMUTH_DOOR.get())
+                .add(ModBlocks.BISMUTH_LAMP.get());
 
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.BISMUTH_FENCE.get());
@@ -50,5 +52,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCE_GATES).add(ModBlocks.BISMUTH_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.BISMUTH_WALL.get());
 
+        tag(ModTags.Blocks.NEEDS_BISMUTH_TOOL)
+                .addTags(BlockTags.NEEDS_IRON_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_BISMUTH_TOOL)
+                .addTags(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_BISMUTH_TOOL);
     }
 }
