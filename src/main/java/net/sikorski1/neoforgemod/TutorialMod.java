@@ -15,6 +15,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.sikorski1.neoforgemod.block.ModBlocks;
+import net.sikorski1.neoforgemod.component.ModDataComponents;
 import net.sikorski1.neoforgemod.item.ModCreativeModeTabs;
 import net.sikorski1.neoforgemod.item.ModItems;
 import org.slf4j.Logger;
@@ -34,6 +35,7 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModDataComponents.register(modEventBus);
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

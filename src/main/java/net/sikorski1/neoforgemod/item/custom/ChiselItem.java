@@ -15,6 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.sikorski1.neoforgemod.block.ModBlocks;
+import net.sikorski1.neoforgemod.component.ModDataComponents;
 
 import java.util.List;
 import java.util.Map;
@@ -47,6 +48,7 @@ public class ChiselItem extends Item {
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
 
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
         return InteractionResult.SUCCESS;
@@ -57,10 +59,14 @@ public class ChiselItem extends Item {
                                 TooltipFlag tooltipFlag) {
         if (Screen.hasShiftDown()) {
             tooltipComponents.add(Component.translatable("tooltip.neoforgemod.chisel.shift_down"));
-
         } else {
             tooltipComponents.add(Component.translatable("tooltip.neoforgemod.chisel"));
         }
+
+        if (stack.get(ModDataComponents.COORDINATES) != null) {
+            tooltipComponents.add(Component.literal("Last Block changed at " + stack.get(ModDataComponents.COORDINATES)));
+        }
+
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }
