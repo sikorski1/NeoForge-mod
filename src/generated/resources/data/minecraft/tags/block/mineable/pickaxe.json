@@ -3,6 +3,12 @@
     "neoforgemod:bismuth_block",
     "neoforgemod:bismuth_ore",
     "neoforgemod:bismuth_deepslate_ore",
-    "neoforgemod:magic_block"
+    "neoforgemod:magic_block",
+    "neoforgemod:bismuth_stairs",
+    "neoforgemod:bismuth_slab",
+    "neoforgemod:bismuth_pressure_plate",
+    "neoforgemod:bismuth_button",
+    "neoforgemod:bismuth_trapdoor",
+    "neoforgemod:bismuth_door"
   ]
 }

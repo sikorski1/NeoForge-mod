@@ -42,6 +42,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.BISMUTH_ORE.get(), block -> createOreDrop(ModBlocks.BISMUTH_ORE.get(), ModItems.BISMUTH.get()));
         add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), block -> createMultipleOreDrops(ModBlocks.BISMUTH_ORE.get(),
                 ModItems.BISMUTH.get(), 2, 3));
+
+        dropSelf(ModBlocks.BISMUTH_LAMP.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrop, float maxDrop) {

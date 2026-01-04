@@ -40,7 +40,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_ORE);
                         output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
                         output.accept(ModBlocks.MAGIC_BLOCK);
-                        
+
                         output.accept(ModBlocks.BISMUTH_STAIRS);
                         output.accept(ModBlocks.BISMUTH_SLAB);
 
@@ -53,6 +53,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.BISMUTH_DOOR);
                         output.accept(ModBlocks.BISMUTH_TRAPDOOR);
+
+                        output.accept(ModBlocks.BISMUTH_LAMP);
                     }).build());
 
     public static void register(IEventBus eventBus) {

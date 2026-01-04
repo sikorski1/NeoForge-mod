@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "neoforgemod:block/bismuth_lamp_off"
+    },
+    "clicked=true": {
+      "model": "neoforgemod:block/bismuth_lamp_on"
+    }
+  }
+}

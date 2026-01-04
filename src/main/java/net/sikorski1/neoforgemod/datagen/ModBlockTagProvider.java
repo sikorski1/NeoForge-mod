@@ -24,14 +24,28 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BISMUTH_BLOCK.get())
                 .add(ModBlocks.BISMUTH_ORE.get())
                 .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.BISMUTH_STAIRS.get())
+                .add(ModBlocks.BISMUTH_SLAB.get())
+                .add(ModBlocks.BISMUTH_PRESSURE_PLATE.get())
+                .add(ModBlocks.BISMUTH_BUTTON.get())
+                .add(ModBlocks.BISMUTH_TRAPDOOR.get())
+                .add(ModBlocks.BISMUTH_DOOR.get());
+
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.BISMUTH_FENCE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.BISMUTH_ORE.get());
+                .add(ModBlocks.BISMUTH_ORE.get())
+                .add(ModBlocks.BISMUTH_PRESSURE_PLATE.get())
+                .add(ModBlocks.BISMUTH_BUTTON.get())
+                .add(ModBlocks.BISMUTH_TRAPDOOR.get())
+                .add(ModBlocks.BISMUTH_DOOR.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get());
 
+        /* Needs for connection with each other */
         tag(BlockTags.FENCES).add(ModBlocks.BISMUTH_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.BISMUTH_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.BISMUTH_WALL.get());

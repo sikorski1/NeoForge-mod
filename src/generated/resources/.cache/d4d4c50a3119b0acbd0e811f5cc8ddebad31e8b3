@@ -1,7 +1,8 @@
-// 1.21	2026-01-03T23:59:36.993401968	Tags for minecraft:block mod id neoforgemod
+// 1.21	2026-01-04T11:57:03.876503833	Tags for minecraft:block mod id neoforgemod
 6572f1c70d137778c1450071df6db3610a1e0d14 data/minecraft/tags/block/fence_gates.json
 15b451c2c1a92a2b1b1ff522c34af815cc0030da data/minecraft/tags/block/fences.json
-bcdf498dadfca7820567208646383b326d4c7d37 data/minecraft/tags/block/mineable/pickaxe.json
+15b451c2c1a92a2b1b1ff522c34af815cc0030da data/minecraft/tags/block/mineable/axe.json
+9697592e2b153c94901f7e57a05e039d4c45c2ea data/minecraft/tags/block/mineable/pickaxe.json
 44a11a794cc7a60bdaffcc7c5a4ace347b7c2254 data/minecraft/tags/block/needs_diamond_tool.json
-e3054064d2421475b3e5661f0a28a392ab05e453 data/minecraft/tags/block/needs_iron_tool.json
+30fd26875e64630cb0c1efaf99123fb1c6e21002 data/minecraft/tags/block/needs_iron_tool.json
 f6fa727cbf5b3ee92345e8d3f880361c666272e6 data/minecraft/tags/block/walls.json

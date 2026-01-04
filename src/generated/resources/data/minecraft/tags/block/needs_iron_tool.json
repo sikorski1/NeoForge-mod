@@ -1,5 +1,9 @@
 {
   "values": [
-    "neoforgemod:bismuth_ore"
+    "neoforgemod:bismuth_ore",
+    "neoforgemod:bismuth_pressure_plate",
+    "neoforgemod:bismuth_button",
+    "neoforgemod:bismuth_trapdoor",
+    "neoforgemod:bismuth_door"
   ]
 }
