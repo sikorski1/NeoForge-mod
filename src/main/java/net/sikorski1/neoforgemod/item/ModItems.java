@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sikorski1.neoforgemod.TutorialMod;
 import net.sikorski1.neoforgemod.item.custom.ChiselItem;
 import net.sikorski1.neoforgemod.item.custom.FuelItem;
+import net.sikorski1.neoforgemod.item.custom.HammerItem;
 
 import java.util.List;
 
@@ -53,6 +54,10 @@ public class ModItems {
     public static final DeferredItem<HoeItem> BISMUTH_HOE = ITEMS.register("bismuth_hoe",
             () -> new HoeItem(ModToolTiers.BISMUTH,
                     new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.BISMUTH, 0f, -3.0f))));
+
+    public static final DeferredItem<HammerItem> BISMUTH_HAMMER = ITEMS.register("bismuth_hammer",
+            () -> new HammerItem(ModToolTiers.BISMUTH,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.BISMUTH, 7f, -3.5f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

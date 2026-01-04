@@ -1,9 +1,10 @@
-// 1.21	2026-01-04T21:58:24.337309746	Item Models: neoforgemod
+// 1.21	2026-01-05T00:29:36.133122244	Item Models: neoforgemod
 274d2077881cb540c94d3e6462cf1adc32ce5566 assets/neoforgemod/models/item/bismuth.json
 dfbcaf8fa00fe791b27b82f726bab8c6df00ed34 assets/neoforgemod/models/item/bismuth_axe.json
 24b1d7bca7e278a471115e95383d55db6fbc33c1 assets/neoforgemod/models/item/bismuth_button.json
 8a101db928059929dc545549c423649c1cd15ec6 assets/neoforgemod/models/item/bismuth_door.json
 775c8430c9fd66dd0a19ca65d20a685929098f4c assets/neoforgemod/models/item/bismuth_fence.json
+94d1134cf3975c325d1fca670b0b3c4d188c9410 assets/neoforgemod/models/item/bismuth_hammer.json
 f97c5004739a1d3768b33e99ee512e83042cceaf assets/neoforgemod/models/item/bismuth_hoe.json
 473586f0d1bad8c54d76fc540ca8ae041b465451 assets/neoforgemod/models/item/bismuth_pickaxe.json
 336e3da89b0f0a9ccb65350acaeb34347974d458 assets/neoforgemod/models/item/bismuth_shovel.json
