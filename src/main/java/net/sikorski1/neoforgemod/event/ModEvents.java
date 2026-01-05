@@ -5,6 +5,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.level.BlockEvent;
@@ -21,6 +22,11 @@ public class ModEvents {
 
         if (mainHandItem.getItem() instanceof HammerItem hammer && player instanceof ServerPlayer serverPlayer) {
             BlockPos initialBlockPos = event.getPos();
+            BlockState initialState = event.getLevel().getBlockState(initialBlockPos);
+
+            if (!hammer.isCorrectToolForDrops(mainHandItem, initialState)) {
+                return;
+            }
 
             for (BlockPos pos : HammerItem.getBlocksToBeDestroyed(5, initialBlockPos, serverPlayer)) {
                 if (pos.equals(initialBlockPos) || !hammer.isCorrectToolForDrops(mainHandItem,
