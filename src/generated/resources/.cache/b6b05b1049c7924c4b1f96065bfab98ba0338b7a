@@ -1,4 +1,4 @@
-// 1.21	2026-01-06T19:01:29.081598544	Item Models: neoforgemod
+// 1.21	2026-01-06T20:30:16.431034717	Item Models: neoforgemod
 274d2077881cb540c94d3e6462cf1adc32ce5566 assets/neoforgemod/models/item/bismuth.json
 dfbcaf8fa00fe791b27b82f726bab8c6df00ed34 assets/neoforgemod/models/item/bismuth_axe.json
 04eb8ef30dc47e9e0993ed3ba6613300bbe32c53 assets/neoforgemod/models/item/bismuth_boots.json
@@ -57,6 +57,7 @@ abe63bf870e432bd13c68f5def1e2568decb3d5a assets/neoforgemod/models/item/bismuth_
 7ee1218f6bf888efd0416b844959cf70ac679ddf assets/neoforgemod/models/item/bismuth_wall.json
 5d8d9565c8fe6c4e2f52fe35908f12d57f4d5ce5 assets/neoforgemod/models/item/chisel.json
 5362921c0e8890d555c34db47c6269e50a823d7c assets/neoforgemod/models/item/frostfire_ice.json
+69ce5f027397900f2ed1dc6890c517da12843d45 assets/neoforgemod/models/item/kaupen_armor_trim_smithing_template.json
 b3be00351f0abbdf485d432700571970f3750e8a assets/neoforgemod/models/item/radish.json
 63c8394d6151df6c837edfd9b3c580376c3afa55 assets/neoforgemod/models/item/raw_bismuth.json
 37fd626abc6da239df33194dab10d31481e10ac9 assets/neoforgemod/models/item/starlight_ashes.json

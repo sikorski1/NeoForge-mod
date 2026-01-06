@@ -16,6 +16,7 @@
   "item.neoforgemod.bismuth_leggings": "Bismuth Leggings",
   "item.neoforgemod.bismuth_boots": "Bismuth Boots",
   "item.neoforgemod.bismuth_horse_armor": "Bismuth Horse Armor",
+  "item.neoforgemod.kaupen_armor_trim_smithing_template": "Kaupen Trim Template",
   "block.neoforgemod.bismuth_block": "Block of Bismuth",
   "block.neoforgemod.bismuth_ore": "Bismuth Ore",
   "block.neoforgemod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
@@ -35,5 +36,7 @@
   "tooltip.neoforgemod.magic_block.tooltip": "This Block is very §9MAGICAL§r",
   "tooltip.neoforgemod.chisel.shift_down": "This Item can chisel Blocks into Bricks",
   "tooltip.neoforgemod.chisel": "Press §eShift§r for more Information",
-  "tooltip.neoforgemod.radish": "Tastes really great!"
+  "tooltip.neoforgemod.radish": "Tastes really great!",
+  "trim_pattern.neoforgemod.kaupen": "Kaupen Armor Trim",
+  "trim_pattern.neoforgemod.bismuth": "Bismuth Material"
 }

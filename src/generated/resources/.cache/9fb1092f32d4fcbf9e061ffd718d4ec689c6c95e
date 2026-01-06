@@ -1,4 +1,4 @@
-// 1.21	2026-01-03T23:59:36.990032298	Recipes
+// 1.21	2026-01-06T20:30:16.433534186	Recipes
 9642c4ccd26f16b2c4743bf9378c8484e19a25d5 data/neoforgemod/advancement/recipes/building_blocks/bismuth_slab.json
 689aa25583c39bb31e177b011c49c0b3e787babe data/neoforgemod/advancement/recipes/building_blocks/bismuth_stairs.json
 e547ef8d232b2aefc6b4c7c8acccc368b2682f93 data/neoforgemod/advancement/recipes/building_blocks/bismuth_wall.json
@@ -12,6 +12,7 @@ a1008d478b8eda804042551c93fda59a5f7794a2 data/neoforgemod/advancement/recipes/mi
 e8437fb3a3c11177ed74a03c2e7e4cfce3928db2 data/neoforgemod/advancement/recipes/misc/bismuth_from_smelting_bismuth_deepslate_ore.json
 89f475820cb87648516c4971f3440fe17041166c data/neoforgemod/advancement/recipes/misc/bismuth_from_smelting_bismuth_ore.json
 fb3d5fbadb9dbcce8c1f68be0da03aafa2983055 data/neoforgemod/advancement/recipes/misc/bismuth_from_smelting_raw_bismuth.json
+159fde127a9037dc20594e9a953ff41d35806573 data/neoforgemod/advancement/recipes/misc/kaupen.json
 27a5a0a97712951cc3dba0836963cbbd5ff22147 data/neoforgemod/advancement/recipes/redstone/bismuth_button.json
 3e7f9a3cd9690484459d86fd0499704de60f9cf2 data/neoforgemod/advancement/recipes/redstone/bismuth_door.json
 65fd61d5ff33041ba7fd0b2922b71fa25852381c data/neoforgemod/advancement/recipes/redstone/bismuth_fence_gate.json
@@ -35,3 +36,4 @@ de42cadf64db6dd1a34613c2bde3500fb1c37be0 data/neoforgemod/recipe/bismuth_pressur
 d2c113bfe74aeca20634d91fb8c00bce3ca049ab data/neoforgemod/recipe/bismuth_stairs.json
 ae4626e238eb19e4b21fbf4bc015c535a7556506 data/neoforgemod/recipe/bismuth_trapdoor.json
 1b3261dd806f27abc159a20d8fc6e9cb8b876981 data/neoforgemod/recipe/bismuth_wall.json
+86af5a3310bdd44be45610c8bd496a4bef057d06 data/neoforgemod/recipe/kaupen.json

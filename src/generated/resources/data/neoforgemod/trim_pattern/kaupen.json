@@ -1,0 +1,8 @@
+{
+  "asset_id": "neoforgemod:kaupen",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.neoforgemod.kaupen"
+  },
+  "template_item": "neoforgemod:kaupen_armor_trim_smithing_template"
+}
