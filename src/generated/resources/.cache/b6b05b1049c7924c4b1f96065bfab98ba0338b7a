@@ -1,4 +1,4 @@
-// 1.21	2026-01-05T23:45:11.072765548	Item Models: neoforgemod
+// 1.21	2026-01-06T19:01:29.081598544	Item Models: neoforgemod
 274d2077881cb540c94d3e6462cf1adc32ce5566 assets/neoforgemod/models/item/bismuth.json
 dfbcaf8fa00fe791b27b82f726bab8c6df00ed34 assets/neoforgemod/models/item/bismuth_axe.json
 04eb8ef30dc47e9e0993ed3ba6613300bbe32c53 assets/neoforgemod/models/item/bismuth_boots.json
@@ -39,6 +39,7 @@ e5c50bb2d75b2e7d8023103d9734d5f83e7630d6 assets/neoforgemod/models/item/bismuth_
 98a707280c53ef6d022192710fd1f00c13da1a71 assets/neoforgemod/models/item/bismuth_helmet_quartz_trim.json
 9387a8b12ed9a220467706a0111c467850e1d1da assets/neoforgemod/models/item/bismuth_helmet_redstone_trim.json
 f97c5004739a1d3768b33e99ee512e83042cceaf assets/neoforgemod/models/item/bismuth_hoe.json
+0bdcd857686f4ba58de1222f4831b7edbbd75947 assets/neoforgemod/models/item/bismuth_horse_armor.json
 98eef190de755f0aeb4dbe9b69a36cdf90f4054a assets/neoforgemod/models/item/bismuth_leggings.json
 23401c0ac666a060029cb20cd80cbf3ae12e44a7 assets/neoforgemod/models/item/bismuth_leggings_amethyst_trim.json
 7e98def23bdd425c69c8797a3effd4bab6074606 assets/neoforgemod/models/item/bismuth_leggings_copper_trim.json
