@@ -18,6 +18,7 @@ import net.sikorski1.neoforgemod.block.ModBlocks;
 import net.sikorski1.neoforgemod.component.ModDataComponents;
 import net.sikorski1.neoforgemod.item.ModCreativeModeTabs;
 import net.sikorski1.neoforgemod.item.ModItems;
+import net.sikorski1.neoforgemod.util.ModItemProperties;
 import org.slf4j.Logger;
 
 
@@ -68,7 +69,7 @@ public class TutorialMod {
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

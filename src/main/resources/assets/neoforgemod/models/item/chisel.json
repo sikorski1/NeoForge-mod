@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "neoforgemod:item/chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "neoforgemod:used": 1
+      },
+      "model": "neoforgemod:item/chisel_used"
+    }
+  ]
+}
