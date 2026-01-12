@@ -1,0 +1,6 @@
+{
+  "parent": "neoforgemod:item/mega_bow",
+  "textures": {
+    "layer0": "neoforgemod:item/mega_bow_pulling_1"
+  }
+}
