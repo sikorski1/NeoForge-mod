@@ -70,6 +70,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.BISMUTH_HORSE_ARMOR.get());
         basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
+
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
