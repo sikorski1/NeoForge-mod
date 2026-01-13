@@ -14,6 +14,7 @@ import net.sikorski1.neoforgemod.TutorialMod;
 import net.sikorski1.neoforgemod.block.custom.BismuthLampBlock;
 import net.sikorski1.neoforgemod.block.custom.MagicBlock;
 import net.sikorski1.neoforgemod.item.ModItems;
+import net.sikorski1.neoforgemod.sound.ModSounds;
 
 import java.util.function.Supplier;
 
@@ -31,7 +32,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> MAGIC_BLOCK =
             registerBlock("magic_block", () ->
-                    new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final DeferredBlock<StairBlock> BISMUTH_STAIRS = registerBlock("bismuth_stairs",
             () -> new StairBlock(ModBlocks.BISMUTH_BLOCK.get().defaultBlockState(),

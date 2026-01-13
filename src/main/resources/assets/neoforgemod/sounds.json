@@ -1,0 +1,38 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.neoforgemod.chisel_use",
+    "sounds": [
+      "neoforgemod:chisel_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.neoforgemod.magic_block_break",
+    "sounds": [
+      "neoforgemod:magic_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.neoforgemod.magic_block_step",
+    "sounds": [
+      "neoforgemod:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.neoforgemod.magic_block_place",
+    "sounds": [
+      "neoforgemod:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.neoforgemod.magic_block_hit",
+    "sounds": [
+      "neoforgemod:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.neoforgemod.magic_block_fall",
+    "sounds": [
+      "neoforgemod:magic_block_fall"
+    ]
+  }
+}
