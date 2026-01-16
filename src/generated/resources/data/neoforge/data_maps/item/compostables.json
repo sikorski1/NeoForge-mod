@@ -1,0 +1,10 @@
+{
+  "values": {
+    "neoforgemod:radish": {
+      "chance": 0.55
+    },
+    "neoforgemod:radish_seeds": {
+      "chance": 0.25
+    }
+  }
+}

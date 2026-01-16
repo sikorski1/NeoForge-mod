@@ -1,5 +1,6 @@
 package net.sikorski1.neoforgemod.datagen;
 
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -13,8 +14,11 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.sikorski1.neoforgemod.block.ModBlocks;
+import net.sikorski1.neoforgemod.block.custom.RadishCropBlock;
 import net.sikorski1.neoforgemod.item.ModItems;
 
 import java.util.Set;
@@ -44,6 +48,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 ModItems.BISMUTH.get(), 2, 3));
 
         dropSelf(ModBlocks.BISMUTH_LAMP.get());
+
+        LootItemCondition.Builder lootItemConditionBuilder =
+                LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RADISH_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RadishCropBlock.AGE, 3));
+
+        add(ModBlocks.RADISH_CROP.get(), this.createCropDrops(ModBlocks.RADISH_CROP.get(),
+                ModItems.RADISH.get(), ModItems.RADISH_SEEDS.get(), lootItemConditionBuilder));
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrop, float maxDrop) {

@@ -13,6 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sikorski1.neoforgemod.TutorialMod;
 import net.sikorski1.neoforgemod.block.custom.BismuthLampBlock;
 import net.sikorski1.neoforgemod.block.custom.MagicBlock;
+import net.sikorski1.neoforgemod.block.custom.RadishCropBlock;
 import net.sikorski1.neoforgemod.item.ModItems;
 import net.sikorski1.neoforgemod.sound.ModSounds;
 
@@ -67,6 +68,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BISMUTH_LAMP = registerBlock("bismuth_lamp",
             () -> new BismuthLampBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(BismuthLampBlock.CLICKED) ? 15 : 3)));
+
+    public static final DeferredBlock<Block> RADISH_CROP = BLOCKS.register("radish_crop",
+            () -> new RadishCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
