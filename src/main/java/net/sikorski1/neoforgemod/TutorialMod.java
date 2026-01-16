@@ -17,6 +17,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.sikorski1.neoforgemod.block.ModBlocks;
 import net.sikorski1.neoforgemod.component.ModDataComponents;
 import net.sikorski1.neoforgemod.effect.ModEffects;
+import net.sikorski1.neoforgemod.enchantment.ModEnchantmentEffects;
 import net.sikorski1.neoforgemod.item.ModCreativeModeTabs;
 import net.sikorski1.neoforgemod.item.ModItems;
 import net.sikorski1.neoforgemod.potion.ModPotions;
@@ -43,6 +44,7 @@ public class TutorialMod {
         ModSounds.register(modEventBus);
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModEnchantmentEffects.register(modEventBus);
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
