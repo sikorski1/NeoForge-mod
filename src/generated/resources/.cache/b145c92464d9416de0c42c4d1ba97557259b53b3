@@ -1,4 +1,4 @@
-// 1.21	2026-01-17T00:35:37.913424787	Block States: neoforgemod
+// 1.21	2026-01-17T13:10:31.422746131	Block States: neoforgemod
 0a0c5d7e5dfe242d4a0172ca8704d882bdb2bae9 assets/neoforgemod/blockstates/bismuth_block.json
 31ab5884dfd1c7dd248eb27050d97e53f932c159 assets/neoforgemod/blockstates/bismuth_button.json
 8e51c2f3dd7c006e057b01ba29e5c102687e3812 assets/neoforgemod/blockstates/bismuth_deepslate_ore.json
@@ -12,6 +12,7 @@
 32b3179345868a75ecff59cc5f6bde0c4ed8897a assets/neoforgemod/blockstates/bismuth_stairs.json
 e4678f34e34d425dc8736b36448a2782567462df assets/neoforgemod/blockstates/bismuth_trapdoor.json
 a6a186423798073a4d828acbd9a86db530fff817 assets/neoforgemod/blockstates/bismuth_wall.json
+165314996eebd4d5e995ee811ecff3d171aeb957 assets/neoforgemod/blockstates/goji_berry_bush.json
 96677b827849c076fadf3d1f9a02037c04993607 assets/neoforgemod/blockstates/magic_block.json
 8ffb886b2fd60883cebb09e820910bbf6d559521 assets/neoforgemod/blockstates/radish_crop.json
 a2b3186164f2b91d34841a129ab07dfa9d0f6614 assets/neoforgemod/models/block/bismuth_block.json
@@ -48,6 +49,10 @@ cdfcbf12fe1c7564a247b15d46a654ac7e442efc assets/neoforgemod/models/block/bismuth
 fe5f03019e808da4d2fa934bdbebf55a29a107ae assets/neoforgemod/models/block/bismuth_wall_post.json
 ba59ab1b2d675e480650b39b8c958ba0c8da6a57 assets/neoforgemod/models/block/bismuth_wall_side.json
 191511cf80ac173c58c59d53bc34a250a1fe3081 assets/neoforgemod/models/block/bismuth_wall_side_tall.json
+6dce881238ecc2b5b719ce582e32751d923423e3 assets/neoforgemod/models/block/goji_berry_bush_stage0.json
+87cae48dff2ecdc0d408fcc8d3d5cc605c1bd7e3 assets/neoforgemod/models/block/goji_berry_bush_stage1.json
+97909c7498655d856ae5f2294a74121983e92b4e assets/neoforgemod/models/block/goji_berry_bush_stage2.json
+b25a1617922cfae7f2566a36334c50bdea5ca5c6 assets/neoforgemod/models/block/goji_berry_bush_stage3.json
 891ce56b2eb9dfd5a846a1e09ef8a09fd9bd2f40 assets/neoforgemod/models/block/magic_block.json
 675d0719f4120801c94b0896e9754b5a1571a214 assets/neoforgemod/models/block/radish_crop_stage0.json
 9cd48ebd04b85786a6ecd6b0f123d12bab6ef86d assets/neoforgemod/models/block/radish_crop_stage1.json

@@ -2,8 +2,8 @@ package net.sikorski1.neoforgemod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -12,9 +12,6 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.sikorski1.neoforgemod.TutorialMod;
 import net.sikorski1.neoforgemod.block.ModBlocks;
 import net.sikorski1.neoforgemod.block.custom.BismuthLampBlock;
-import net.sikorski1.neoforgemod.block.custom.RadishCropBlock;
-
-import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -51,22 +48,38 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.BISMUTH_TRAPDOOR, "_bottom");
 
         customLamp();
-        makeCrop((CropBlock) ModBlocks.RADISH_CROP.get(), "radish_crop_stage", "radish_crop_stage");
+        makeCropOrBush(ModBlocks.RADISH_CROP.get(), "radish_crop_stage", "radish_crop_stage", true);
+        makeCropOrBush(ModBlocks.GOJI_BERRY_BUSH.get(), "goji_berry_bush_stage", "goji_berry_bush_stage", false);
     }
 
-    public void makeCrop(CropBlock block, String modelName, String textureName) {
-        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
-        getVariantBuilder(block).forAllStates(function);
+
+    public void makeCropOrBush(Block block, String modelName, String textureName, boolean isCrop) {
+        IntegerProperty ageProperty = (IntegerProperty) block.getStateDefinition().getProperty("age");
+
+        if (ageProperty == null) return;
+
+        getVariantBuilder(block).forAllStates(state -> {
+            int age = state.getValue(ageProperty);
+            return states(age, modelName, textureName, isCrop);
+        });
+
     }
 
-    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
-        ConfiguredModel[] models = new ConfiguredModel[1];
-        models[0] =
-                new ConfiguredModel(models().crop(modelName + state.getValue(((RadishCropBlock) block).getAgeProperty()),
-                        ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID,
-                                "block/" + textureName + state.getValue(((RadishCropBlock) block).getAgeProperty()))).renderType("cutout"));
+    private ConfiguredModel[] states(int age, String modelName, String textureName, boolean isCrop) {
+        return new ConfiguredModel[]{
+                new ConfiguredModel(
+                        isCrop ?
+                                models().crop(modelName + age,
+                                                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID,
+                                                        "block/" + textureName + age))
+                                        .renderType("cutout") :
+                                models().cross(modelName + age,
+                                                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID,
+                                                        "block/" + textureName + age))
+                                        .renderType("cutout")
 
-        return models;
+                )
+        };
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

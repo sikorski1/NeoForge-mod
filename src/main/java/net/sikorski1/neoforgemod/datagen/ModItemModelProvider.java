@@ -73,6 +73,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
         basicItem(ModItems.RADISH_SEEDS.get());
+        basicItem(ModItems.GOJI_BERRIES.get());
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

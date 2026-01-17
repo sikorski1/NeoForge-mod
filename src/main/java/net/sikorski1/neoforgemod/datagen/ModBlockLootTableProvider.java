@@ -10,6 +10,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
@@ -44,18 +46,43 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.BISMUTH_TRAPDOOR.get());
 
         add(ModBlocks.BISMUTH_ORE.get(), block -> createOreDrop(ModBlocks.BISMUTH_ORE.get(), ModItems.BISMUTH.get()));
-        add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), block -> createMultipleOreDrops(ModBlocks.BISMUTH_ORE.get(),
-                ModItems.BISMUTH.get(), 2, 3));
+        add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(), block -> createMultipleOreDrops(block, ModItems.BISMUTH.get(), 2,
+                3));
 
         dropSelf(ModBlocks.BISMUTH_LAMP.get());
 
         LootItemCondition.Builder lootItemConditionBuilder =
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RADISH_CROP.get())
-                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RadishCropBlock.AGE, 3));
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RadishCropBlock.AGE,
+                                3));
 
         add(ModBlocks.RADISH_CROP.get(), this.createCropDrops(ModBlocks.RADISH_CROP.get(),
                 ModItems.RADISH.get(), ModItems.RADISH_SEEDS.get(), lootItemConditionBuilder));
 
+        add(ModBlocks.GOJI_BERRY_BUSH.get(), block -> this.createBushDrops(ModBlocks.GOJI_BERRY_BUSH.get(),
+                ModItems.GOJI_BERRIES.get()));
+    }
+
+    protected LootTable.Builder createBushDrops(Block block, Item item) {
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+
+        return this.applyExplosionDecay(
+                block,
+                LootTable.lootTable()
+                        .withPool(LootPool.lootPool()
+                                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                        .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                .hasProperty(SweetBerryBushBlock.AGE, 3)))
+                                .add(LootItem.lootTableItem(item))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE))))
+                        .withPool(LootPool.lootPool().
+                                when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                        .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                .hasProperty(SweetBerryBushBlock.AGE, 2)))
+                                .add(LootItem.lootTableItem(item))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrop, float maxDrop) {
