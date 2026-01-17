@@ -1,4 +1,4 @@
-// 1.21	2026-01-17T22:36:18.714667258	Loot Tables
+// 1.21	2026-01-18T00:03:41.207425549	Loot Tables
 9f45f8c614d2c4131b2bddac09c35f255326c5aa data/neoforgemod/loot_table/blocks/bismuth_block.json
 1b549d9e33e1fbb52d143182fe4322e809ba14ec data/neoforgemod/loot_table/blocks/bismuth_button.json
 1577056ab7daff907dbd512676945e0fd62bc383 data/neoforgemod/loot_table/blocks/bismuth_deepslate_ore.json
@@ -14,6 +14,13 @@ c88b8ce51933f9197ae4cd67cf2159bcf7906759 data/neoforgemod/loot_table/blocks/bism
 3e83ec1dc8be25c97d36d226f4880e5b27d80a50 data/neoforgemod/loot_table/blocks/bismuth_stairs.json
 d5af5f19970c922d3801b8870416bae5f7256c75 data/neoforgemod/loot_table/blocks/bismuth_trapdoor.json
 6acc719241ffdc1ec28d01e1dff8e0e5845e216d data/neoforgemod/loot_table/blocks/bismuth_wall.json
+c4814f91eb773a59fea0a6a4374cdafc76ece9f5 data/neoforgemod/loot_table/blocks/bloodwood_leaves.json
+a6587a5d80d792c63cbc1e077334652cb9f06418 data/neoforgemod/loot_table/blocks/bloodwood_log.json
+6da0692d7c087cc75114a4bf81da85b15d22a1fc data/neoforgemod/loot_table/blocks/bloodwood_planks.json
+165ebc52dcd1f237aedb0db777ad9ab5ac194c75 data/neoforgemod/loot_table/blocks/bloodwood_sapling.json
+f8fb6d2909b3dd6da75f5225d081b00ff6dacb76 data/neoforgemod/loot_table/blocks/bloodwood_wood.json
 421e3fe2f9e756cdcb2afa4ad955b3ce5e533919 data/neoforgemod/loot_table/blocks/goji_berry_bush.json
 fb0202d830db6baf08aad3cf909661936e72e4dc data/neoforgemod/loot_table/blocks/magic_block.json
 0436b7d0e24a24e6d29473d1dca532097d36c161 data/neoforgemod/loot_table/blocks/radish_crop.json
+68eadc16f55aa9d653afdd820c4b6baf5f9d92fe data/neoforgemod/loot_table/blocks/stripped_bloodwood_log.json
+03af082b3e59441b448885de9556f3a5950aedbc data/neoforgemod/loot_table/blocks/stripped_bloodwood_wood.json

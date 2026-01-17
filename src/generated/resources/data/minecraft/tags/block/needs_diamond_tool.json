@@ -1,5 +1,7 @@
 {
   "values": [
-    "neoforgemod:bismuth_deepslate_ore"
+    "neoforgemod:bismuth_deepslate_ore",
+    "neoforgemod:bismuth_end_ore",
+    "neoforgemod:bismuth_nether_ore"
   ]
 }

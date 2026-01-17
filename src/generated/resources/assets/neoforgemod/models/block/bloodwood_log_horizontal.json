@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "neoforgemod:block/bloodwood_log_top",
+    "side": "neoforgemod:block/bloodwood_log"
+  }
+}

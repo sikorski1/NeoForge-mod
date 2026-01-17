@@ -65,6 +65,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.GOJI_BERRY_BUSH.get(), block -> this.createBushDrops(ModBlocks.GOJI_BERRY_BUSH.get(),
                 ModItems.GOJI_BERRIES.get()));
+
+        dropSelf(ModBlocks.BLOODWOOD_LOG.get());
+        dropSelf(ModBlocks.BLOODWOOD_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_BLOODWOOD_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_BLOODWOOD_WOOD.get());
+        dropSelf(ModBlocks.BLOODWOOD_PLANKS.get());
+        dropSelf(ModBlocks.BLOODWOOD_SAPLING.get());
+
+        add(ModBlocks.BLOODWOOD_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.BLOODWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     protected LootTable.Builder createBushDrops(Block block, Item item) {

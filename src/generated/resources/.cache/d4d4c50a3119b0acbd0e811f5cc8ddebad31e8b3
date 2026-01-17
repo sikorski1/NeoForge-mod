@@ -1,9 +1,10 @@
-// 1.21	2026-01-17T13:10:31.424022619	Tags for minecraft:block mod id neoforgemod
+// 1.21	2026-01-18T00:03:41.207959326	Tags for minecraft:block mod id neoforgemod
 6572f1c70d137778c1450071df6db3610a1e0d14 data/minecraft/tags/block/fence_gates.json
 15b451c2c1a92a2b1b1ff522c34af815cc0030da data/minecraft/tags/block/fences.json
+816718400bf933d357d6bf47a9791a0ecb98c3b2 data/minecraft/tags/block/logs_that_burn.json
 15b451c2c1a92a2b1b1ff522c34af815cc0030da data/minecraft/tags/block/mineable/axe.json
-52292db57d42955fd8774a038b117c133e783eef data/minecraft/tags/block/mineable/pickaxe.json
-44a11a794cc7a60bdaffcc7c5a4ace347b7c2254 data/minecraft/tags/block/needs_diamond_tool.json
+a57656e7931ab52ddc69f4181e52152a0bbdfb1f data/minecraft/tags/block/mineable/pickaxe.json
+c62aeab722caa01d3393e361ed35645c45e8efdd data/minecraft/tags/block/needs_diamond_tool.json
 30fd26875e64630cb0c1efaf99123fb1c6e21002 data/minecraft/tags/block/needs_iron_tool.json
 f6fa727cbf5b3ee92345e8d3f880361c666272e6 data/minecraft/tags/block/walls.json
 0ce98577dcc6efd7045146fff0f0917d63f78921 data/neoforgemod/tags/block/incorrect_for_bismuth_tool.json
