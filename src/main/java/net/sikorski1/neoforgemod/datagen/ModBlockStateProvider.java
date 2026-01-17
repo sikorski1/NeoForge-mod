@@ -22,6 +22,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.BISMUTH_BLOCK);
         blockWithItem(ModBlocks.BISMUTH_ORE);
+        blockWithItem(ModBlocks.BISMUTH_END_ORE);
+        blockWithItem(ModBlocks.BISMUTH_NETHER_ORE);
         blockWithItem(ModBlocks.BISMUTH_DEEPSLATE_ORE);
         blockWithItem(ModBlocks.MAGIC_BLOCK);
 

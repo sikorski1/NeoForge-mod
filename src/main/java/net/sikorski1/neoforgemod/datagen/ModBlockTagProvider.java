@@ -25,6 +25,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BISMUTH_BLOCK.get())
                 .add(ModBlocks.BISMUTH_ORE.get())
                 .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
+                .add(ModBlocks.BISMUTH_END_ORE.get())
+                .add(ModBlocks.BISMUTH_NETHER_ORE.get())
                 .add(ModBlocks.MAGIC_BLOCK.get())
                 .add(ModBlocks.BISMUTH_STAIRS.get())
                 .add(ModBlocks.BISMUTH_SLAB.get())
@@ -45,7 +47,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BISMUTH_DOOR.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get());
+                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
+                .add(ModBlocks.BISMUTH_END_ORE.get())
+                .add(ModBlocks.BISMUTH_NETHER_ORE.get());
 
         /* Needs for connection with each other */
         tag(BlockTags.FENCES).add(ModBlocks.BISMUTH_FENCE.get());
