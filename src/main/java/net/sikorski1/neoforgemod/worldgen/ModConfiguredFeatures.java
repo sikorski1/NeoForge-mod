@@ -2,16 +2,20 @@ package net.sikorski1.neoforgemod.worldgen;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -31,6 +35,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_BISMUTH_ORE_KEY = registerKey("nether_bismuth_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_BISMUTH_ORE_KEY = registerKey("end_bismuth_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLOODWOOD_KEY = registerKey("bloodwood");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GOJI_BERRY_BUSH_KEY = registerKey("goji_berry_bush_key");
 
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
@@ -59,9 +64,15 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.BLOODWOOD_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(3), 6),
 
-                new TwoLayersFeatureSize(1, 0, 2))
+                new TwoLayersFeatureSize(1, 0, 2)).dirt(BlockStateProvider.simple(Blocks.NETHERRACK))
                 .build()
         );
+
+        register(context, GOJI_BERRY_BUSH_KEY, Feature.RANDOM_PATCH,
+                FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(
+                                BlockStateProvider.simple((BlockState) ModBlocks.GOJI_BERRY_BUSH.get().defaultBlockState().setValue(SweetBerryBushBlock.AGE, 3))),
+                        List.of(Blocks.GRASS_BLOCK)));
     }
 
     private static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
