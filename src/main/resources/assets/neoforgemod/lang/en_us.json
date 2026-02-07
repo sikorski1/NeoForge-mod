@@ -22,6 +22,7 @@
   "item.neoforgemod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
   "item.neoforgemod.radish_seeds": "Radish Seeds",
   "item.neoforgemod.goji_berries": "Goji Berries",
+  "item.neoforgemod.gecko_spawn_egg": "Gecko Spawn Egg",
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
@@ -64,5 +65,6 @@
   "tooltip.neoforgemod.chisel": "Press §eShift§r for more Information",
   "tooltip.neoforgemod.radish": "Tastes really great!",
   "trim_pattern.neoforgemod.kaupen": "Kaupen Armor Trim",
-  "trim_pattern.neoforgemod.bismuth": "Bismuth Material"
+  "trim_pattern.neoforgemod.bismuth": "Bismuth Material",
+  "entity.mccourse.gecko": "Gecko"
 }

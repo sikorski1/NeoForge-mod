@@ -1,4 +1,4 @@
-// 1.21	2026-01-18T00:03:41.206924853	Item Models: neoforgemod
+// 1.21	2026-02-07T13:13:56.599638323	Item Models: neoforgemod
 b93ced6c23a80d57765fbbb51d1c33d2aa7d9aa7 assets/neoforgemod/models/item/bar_brawl_music_disc.json
 274d2077881cb540c94d3e6462cf1adc32ce5566 assets/neoforgemod/models/item/bismuth.json
 dfbcaf8fa00fe791b27b82f726bab8c6df00ed34 assets/neoforgemod/models/item/bismuth_axe.json
@@ -58,6 +58,7 @@ abe63bf870e432bd13c68f5def1e2568decb3d5a assets/neoforgemod/models/item/bismuth_
 7ee1218f6bf888efd0416b844959cf70ac679ddf assets/neoforgemod/models/item/bismuth_wall.json
 b0816eb27c0ec29dcf157e7f9d3131e9a145aeb0 assets/neoforgemod/models/item/bloodwood_sapling.json
 5362921c0e8890d555c34db47c6269e50a823d7c assets/neoforgemod/models/item/frostfire_ice.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/neoforgemod/models/item/gecko_spawn_egg.json
 fac4854a935f2028997294cb82d17181ecf4d822 assets/neoforgemod/models/item/goji_berries.json
 69ce5f027397900f2ed1dc6890c517da12843d45 assets/neoforgemod/models/item/kaupen_armor_trim_smithing_template.json
 b3be00351f0abbdf485d432700571970f3750e8a assets/neoforgemod/models/item/radish.json

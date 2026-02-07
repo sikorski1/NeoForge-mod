@@ -1,6 +1,7 @@
 package net.sikorski1.neoforgemod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -18,6 +19,8 @@ import net.sikorski1.neoforgemod.block.ModBlocks;
 import net.sikorski1.neoforgemod.component.ModDataComponents;
 import net.sikorski1.neoforgemod.effect.ModEffects;
 import net.sikorski1.neoforgemod.enchantment.ModEnchantmentEffects;
+import net.sikorski1.neoforgemod.entity.ModEntities;
+import net.sikorski1.neoforgemod.entity.client.GeckoRenderer;
 import net.sikorski1.neoforgemod.item.ModCreativeModeTabs;
 import net.sikorski1.neoforgemod.item.ModItems;
 import net.sikorski1.neoforgemod.potion.ModPotions;
@@ -45,6 +48,7 @@ public class TutorialMod {
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
         ModEnchantmentEffects.register(modEventBus);
+        ModEntities.register(modEventBus);
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -78,6 +82,7 @@ public class TutorialMod {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
+            EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
         }
     }
 }
