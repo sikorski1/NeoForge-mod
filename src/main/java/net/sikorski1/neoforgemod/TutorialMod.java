@@ -21,6 +21,7 @@ import net.sikorski1.neoforgemod.effect.ModEffects;
 import net.sikorski1.neoforgemod.enchantment.ModEnchantmentEffects;
 import net.sikorski1.neoforgemod.entity.ModEntities;
 import net.sikorski1.neoforgemod.entity.client.GeckoRenderer;
+import net.sikorski1.neoforgemod.entity.client.TomahawkProjectileRenderer;
 import net.sikorski1.neoforgemod.item.ModCreativeModeTabs;
 import net.sikorski1.neoforgemod.item.ModItems;
 import net.sikorski1.neoforgemod.potion.ModPotions;
@@ -83,6 +84,7 @@ public class TutorialMod {
         static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
             EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
+            EntityRenderers.register(ModEntities.TOMAHAWK.get(), TomahawkProjectileRenderer::new);
         }
     }
 }

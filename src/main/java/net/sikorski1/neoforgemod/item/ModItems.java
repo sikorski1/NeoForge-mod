@@ -11,10 +11,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sikorski1.neoforgemod.TutorialMod;
 import net.sikorski1.neoforgemod.block.ModBlocks;
 import net.sikorski1.neoforgemod.entity.ModEntities;
-import net.sikorski1.neoforgemod.item.custom.ChiselItem;
-import net.sikorski1.neoforgemod.item.custom.FuelItem;
-import net.sikorski1.neoforgemod.item.custom.HammerItem;
-import net.sikorski1.neoforgemod.item.custom.ModArmorItem;
+import net.sikorski1.neoforgemod.item.custom.*;
 import net.sikorski1.neoforgemod.sound.ModSounds;
 
 import java.util.List;
@@ -103,6 +100,9 @@ public class ModItems {
     public static final DeferredItem<Item> GECKO_SPAWN_EGG = ITEMS.register("gecko_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.GECKO, 0x31afaf, 0xffac00,
                     new Item.Properties()));
+
+    public static final DeferredItem<Item> TOMAHAWK = ITEMS.register("tomahawk",
+            () -> new TomahawkItem(new Item.Properties().stacksTo(16)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

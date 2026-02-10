@@ -23,6 +23,7 @@
   "item.neoforgemod.radish_seeds": "Radish Seeds",
   "item.neoforgemod.goji_berries": "Goji Berries",
   "item.neoforgemod.gecko_spawn_egg": "Gecko Spawn Egg",
+  "item.neoforgemod.tomahawk": "Tomahawk",
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
@@ -66,5 +67,6 @@
   "tooltip.neoforgemod.radish": "Tastes really great!",
   "trim_pattern.neoforgemod.kaupen": "Kaupen Armor Trim",
   "trim_pattern.neoforgemod.bismuth": "Bismuth Material",
-  "entity.mccourse.gecko": "Gecko"
+  "entity.mccourse.gecko": "Gecko",
+  "entity.mccourse.tomahawk": "Tomahawk"
 }
