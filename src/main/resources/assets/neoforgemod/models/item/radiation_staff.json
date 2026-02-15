@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "neoforgemod:item/radiation_staff_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "neoforgemod:item/radiation_staff_2d"
+    },
+    "ground": {
+      "parent": "neoforgemod:item/radiation_staff_2d"
+    },
+    "fixed": {
+      "parent": "neoforgemod:item/radiation_staff_2d"
+    }
+  }
+}
